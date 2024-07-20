@@ -21,9 +21,9 @@ html {
     padding: 2rem;
 }
 .contenedor {
-    max-width: 1280px;
+    
     margin: auto;
-    padding: 2rem 0px;
+    padding: 4rem 0px;
 
 }
 
@@ -64,9 +64,6 @@ h2 {
     line-height: 100%;
 }
 
-img {
-    border-radius: 20px;
-}
 
 figure {
     display: flex;
@@ -217,11 +214,18 @@ figure {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    position: relative;
 }
 
 .col-hero {
-    width: 33%;
+    width: 50%;
 
+}
+.col-counter-up {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: auto;
 }
 
 .sub-titulo {
@@ -240,11 +244,13 @@ figure {
     font-weight: 900;
     font-size: 4rem;
     line-height: 100%;
+    
 }
 
 .p-hero-home {
     font-size: 1.5rem;
     margin: 0px 0px 20px 0px;
+    
 }
 
 .contenedor-btn {
@@ -284,24 +290,24 @@ figure {
 
 
 .counterup-div {
-    padding: 40px;
+    padding: 20px;
     background-color: #181818;
     border-radius: 10px;
     color: #6a6d74;
-    font-size: 14px;
+    font-size: 12px;
     display: flex;
     gap: 20px;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .counterup-div span {
     color: #5CFBD8;
-    font-size: 18px;
+    font-size: 14px;
 }
 
 .counter-up-text {
 
-    padding: 20px;
+    padding: 14px;
     border: 1px solid #34363A;
     border-radius: 10px;
     margin-bottom: 10px;
@@ -312,7 +318,7 @@ figure {
 .numero-contador {
     color: var(--color-secundario);
     font-family: "Inconsolata", monospace;
-    font-size: 3rem;
+    font-size: 18px;
     letter-spacing: 0cap;
     margin: 0px;
     line-height: 100%;
@@ -569,6 +575,7 @@ input.btn-enviar {
     text-align: start;
 }
 .contenedor-datos-contacto{
+    margin-top: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
