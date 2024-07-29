@@ -1,0 +1,13 @@
+$colorprimario: #000000;
+
+
+div{
+    background-color: $colorprimario
+
+    p {
+        color: black;
+    }
+    :hover {
+        color:green;
+    }
+}
