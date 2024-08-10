@@ -1,0 +1,68 @@
+@import "../utilities/variables.scss";
+
+.contenedor-tabs {
+
+    .tab-portfolio {
+        font-family: $inconsolata;
+        padding: 10px 50px;
+        color:$color-primario;
+
+        &.active {
+            background-color: $color-gris-orcuro;
+            color: $color-blanco;
+            border-color: $color-primario
+        }
+        
+    }
+
+    .tab-content {
+        padding: 20px 0px;
+
+        .grid-proyectos{
+            &.portfolio {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-gap: 10px;
+                grid-template-rows: auto;
+            }
+
+            .card-proyecto {
+                background-color: #181818;
+                padding: 20px;
+                border-radius: 10px;
+                transition: $trasition;
+
+                &:hover {
+                    background-color: #222222;
+                }
+
+                figure {
+                    padding: 0px;
+                    margin: 0px;
+                    max-width: 100%;
+                    display: flex;
+
+                    .img-destacada-proyecto {
+                        width: 100%;
+                        border-radius: 10px;
+                    }
+                }
+
+                .titulo-proyecto {
+
+                    margin-bottom: 0px;
+                    font-size: 22px;
+                }
+
+                .categoria-proyecto {
+                    font-family: $inconsolata;
+                    color: $color-primario;
+                    font-size: 16px;
+                    margin-top: 20px;
+                }
+            
+            }
+        }
+        }
+
+}

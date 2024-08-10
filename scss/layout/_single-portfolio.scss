@@ -1,0 +1,52 @@
+@import "../utilities/variables.scss";
+
+.imagen-destacada-proyecto {
+    padding-left: 60px;
+
+    img {
+        width: 100%;
+    }
+}
+
+.descripcion-proyecto {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    justify-content: center;
+    height: 100%;
+}
+.contenedor-imagenes-proyecto{
+    padding-top: 60px;
+    .imagenes-de-proyecto {
+        padding-right: 20px;
+    
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.detallesproyecto {
+    background-color: #181818;
+    padding: 20px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 20px;
+
+    .detalle-proyecto {
+        border-bottom: 1px solid #34363A;
+
+        h4 {
+            font-size: 18px;
+        }
+
+        .tipo-detalle {
+            font-size: 16px;
+            font-family: "Inconsolata", monospace;
+            color: #5CFBD8;
+        }
+    }
+}

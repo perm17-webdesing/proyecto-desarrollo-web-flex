@@ -1,0 +1,173 @@
+@import "../utilities/variables.scss";
+
+.heroservicios {
+    .imagenes-servicios {
+
+        width: 100%;
+        padding-right: 60px;
+
+
+        .imagen-servicio {
+            width: 100%;
+
+        }
+
+    }
+
+    .contenedor-btn {
+        margin-top: 20px;
+    }
+}
+
+.contenedor-servicios {
+
+    max-width: 1000px;
+    margin: auto !important;
+
+
+
+    .card-servicios {
+
+        background-color: #000000;
+        padding: 20px;
+        border: 1px solid #96979b;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: row;
+        column-gap: 10px;
+        margin: 10px;
+
+
+
+        figure {
+            width: 15%;
+        }
+
+        .col-text-servicios {
+            width: 85%;
+            padding-right: 20px;
+
+
+            h3 {
+                font-size: 24px;
+                margin-bottom: 10px;
+                color: $color-primario;
+
+
+            }
+
+        }
+    }
+
+    .img-servicio {
+
+        width: 100%;
+        border-radius: 0;
+        height: 150px;
+
+    }
+
+}
+
+.contenedor-proyectos-destacados {
+
+
+    border-radius: 10px;
+
+    .contenedor-proyecto {
+        background-color: $color-negro;
+        padding: 20px;
+        border: 1px solid $color-primario;
+        border-radius: 10px;
+
+        .imagen-proyecto-destacado {
+            width: 500px;
+            border-radius: 10px;
+
+        }
+
+        .col-text-proyecto-destacado {
+            .categoriadelproyecto {
+
+                font-family: $inconsolata;
+                color: $color-primario;
+                margin: 0px;
+
+            }
+
+            .titulodelproyecto {
+                font-size: 24px;
+                margin: 0px;
+
+            }
+
+            .descripcion-del-proyecto {
+                margin-bottom: 20px;
+
+            }
+        }
+
+    }
+}
+
+.carousel {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .carousel-inner {
+
+        height: 200px;
+        width: 1000px;
+        margin: auto;
+        background-color: $color-negro;
+        border-radius: 15px;
+
+        .carousel-item {
+
+            height: 100%;
+            width: 1000px !important;
+
+            .card-testimonio {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                width: 80%;
+                margin: auto;
+
+                .testimonio {
+                    font-size: 1.2rem;
+                    text-align: center;
+                }
+
+                .nombre {
+                    text-align: center;
+                }
+
+                .web {
+                    text-align: center;
+                    color: $color-primario;
+                    font-family: $inconsolata;
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+
+}
+
+.contenedor-grid-logos {
+    .logo {
+        padding: 30px;
+        filter: grayscale(70%);
+        transition:$trasition;
+
+        &:hover {
+            filter: grayscale(0%);
+        }
+    }
+
+}

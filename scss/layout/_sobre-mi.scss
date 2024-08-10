@@ -1,0 +1,138 @@
+@import "../utilities/variables.scss";
+
+.hero-sobre-mi {
+    padding-top: 2rem;
+
+    .imagen-hero {
+        width: 800px;
+    }
+}
+
+.contenedor-sobre-mi {
+
+    .cont-text-soypedro {
+        padding-right: 100px;
+    }
+
+    .figure-sobre-mi {
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+    }
+
+    .flotante {
+
+        .h6-actitud {
+            margin: 0px;
+            font-size: 18px;
+        }
+
+        .img-actitud {
+            width: 80px;
+        }
+
+        .div-actitud {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            column-gap: 10px;
+            justify-content: center;
+            padding: 10px;
+            background: rgba(74, 74, 74, 0.5);
+            box-shadow: 0 8px 32px 0 rgba(128, 128, 128, 0.37);
+            backdrop-filter: blur(2.5px);
+            -webkit-backdrop-filter: blur(2.5px);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+
+            img {
+                width: 30px;
+                border-radius: 0px;
+            }
+        }
+
+
+
+
+    }
+
+    .flotante1 {
+        bottom: 400px;
+        left: -30px;
+    }
+
+    .flotante2 {
+        bottom: 300px;
+        left: 0px;
+    }
+}
+
+.contenedor-skills {
+
+    .grid-card-skill {
+
+        .row {
+            display: grid !important;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 1fr;
+            grid-column-gap: 15px;
+            grid-row-gap: 0px;
+        }
+
+        .card-skill {
+            background-color: #111111;
+            padding: 20px;
+            border: 1px solid #96979b;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            column-gap: 10px;
+            width: 100%;
+
+            img {
+                width: 40px;
+            }
+
+            div {
+                font-family: $inconsolata;
+
+            }
+
+        }
+
+    }
+}
+
+.contenedor-proceso-de-trabajo {
+
+    .col-texto {
+        padding-right: 60px;
+    }
+
+    .card-procesotrabajo {
+        background-color: #181818;
+        padding: 20px;
+        border: 1px solid #96979b;
+        border-radius: 10px;
+        margin-bottom: 20px;
+
+        .icono-procesodetrabajo {
+            width: 130px;
+        }
+
+        h3.proceso {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #5CFBD8;
+        
+        
+        }
+    
+    
+    }
+
+}

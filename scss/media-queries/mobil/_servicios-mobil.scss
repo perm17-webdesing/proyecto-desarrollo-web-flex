@@ -1,0 +1,88 @@
+@import "../../utilities/variables";
+
+@media (max-width:600px) {
+.hero-sobre-mi{
+    padding-top: 0px!important;
+}
+    .heroservicios{
+        flex-direction: column !important;
+
+        .col-5,
+    .col-7 {
+        width: 100% !important;
+
+    }
+
+    .col-7{
+        margin-top: 20px;
+    }
+    }
+    .contenedor-servicios{
+        .row{
+            flex-direction: column;
+
+        }
+        .card-servicios{
+            flex-direction: column-reverse;
+            width: 100%;
+            .col-text-servicios{
+                width: 100%;
+                h3{
+                    text-align: center;
+                }
+                p {
+                    text-align: center;
+                }
+            }
+            figure {
+                width: 100%;
+                margin-bottom: 20px;
+
+                .img-servicio{
+                    width: 80px;
+                    height: auto;
+                }
+            }
+
+        }
+    }
+    .contenedor-proyectos-destacados{
+
+        .contenedor-proyecto{
+            flex-direction: column;
+
+            .imagen-proyecto-destacado{
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+
+        }
+
+    }  
+    body > section:nth-child(5) > div > div.contenedor-proyectos-destacados > div.contenedor-proyecto.row.flex-row-reverse.mb-4 {
+        flex-direction: column !important;
+
+    }
+
+    .carousel{
+        .carousel-inner {
+            height: 200px;
+    
+            .carousel-item{
+                width: auto !important;
+            }
+        }
+
+    }
+
+    .contenedor-grid-logos {
+        .row{
+            .col-3 {
+                width: 50%;
+            }
+        }
+    }
+
+
+}

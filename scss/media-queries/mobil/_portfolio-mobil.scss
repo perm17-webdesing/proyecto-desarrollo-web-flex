@@ -1,0 +1,17 @@
+@import "../../utilities/variables";
+
+@media (max-width:600px) {
+    .contenedor-tabs {
+        .tab-content {
+            .grid-proyectos {
+                &.portfolio {
+                    grid-template-columns: 1fr !important;
+
+                }
+            }
+
+
+        }
+    }
+
+}

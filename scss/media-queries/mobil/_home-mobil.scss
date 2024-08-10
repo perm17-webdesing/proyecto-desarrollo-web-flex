@@ -1,0 +1,203 @@
+@import "../../utilities/variables";
+@media (max-width:600px) {
+
+    .cont-hero-home {
+        .hero-home {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+
+            .col-hero {
+                width: 100%;
+
+                .contenedor-titulo-hero-home {
+                    .sub-titulo {
+                        font-size: 16px;
+
+                    }
+
+                    h1 {
+                        font-size: 3rem;
+                    }
+
+                    .p-hero-home {
+                        font-size: 1.2rem;
+                    }
+                }
+
+                .img-hero {
+                    height: 200px;
+                }
+
+                &.col-counter-up {
+                    position: relative;
+
+                    .contenedor-counterup {
+
+                        .counterup-div {
+                            display: grid;
+                            grid-template-columns: repeat(3, 1fr);
+                            grid-template-rows: auto;
+                            grid-column-gap: 10px;
+                            grid-row-gap: 20px;
+                            padding: 8px;
+
+                            .counter-up-text {
+                                justify-content: start;
+                                padding: 8px;
+
+                                .numero-contador {
+                                    font-size: 16px;
+                                }
+
+                                div {
+                                    font-size: 12px;
+                                }
+
+                            }
+
+                        }
+
+                    }
+                }
+            }
+
+        }
+
+    }
+
+    .sec-sobre-mi {
+
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+
+        .col-sobremi {
+
+            width: 100%;
+
+            .img-sobre-mi {
+
+                height: auto;
+                padding-top: 40px;
+
+            }
+        }
+
+    }
+
+    .sec-experiencia {
+        .sec-experiencia-home {
+
+
+
+            flex-direction: column;
+
+            .logo-experiencia {
+
+                display: none;
+            }
+
+            .contenedor-exp {
+
+                width: 100%;
+                padding: 20px;
+
+                .text-exp {
+                    .sub-titulo {
+                        text-align: center;
+
+                    }
+
+                    .titulo-secciones {
+                        text-align: center;
+                    }
+
+                }
+
+                .contenedor-card-exp {
+
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    grid-template-rows: repeat(4, 1fr);
+                    grid-column-gap: 0px;
+                    grid-row-gap: 10px;
+
+                    .card-exp {
+
+                        padding: 10px;
+                        display: grid;
+                        grid-template-columns: 1fr 1.7fr;
+                        grid-template-rows: 1fr;
+                        grid-column-gap: 0px;
+                        grid-row-gap: 0px;
+
+                        .icon-exp {
+                            padding: 10px;
+
+                            img {
+                                width: 100%;
+                                object-fit: contain;
+                            }
+
+                        }
+
+                        .text-card-exp {}
+                    }
+
+                }
+
+            }
+        }
+
+    }
+
+    #servicios {
+        .contenedor-servicios {
+            .contenedor-card-servicios {
+
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(4, 1fr);
+                grid-column-gap: 0px;
+                grid-row-gap: 10px;
+
+                .card-servicio {
+                    flex-direction: column-reverse;
+                    row-gap: 20px;
+                    justify-content: center;
+
+                    .text-servicios {
+                        .servicios-card {
+                            color: $color-primario;
+
+                        }
+
+                        .p-servicio {}
+
+                    }
+
+                    .icon-servicios {}
+                }
+            }
+        }
+
+    }
+
+    #contacto {
+        .contenedor-contacto {
+
+            flex-direction: column;
+
+            .col-contacto {
+
+                width: 100%;
+
+                .contenedor-datos-contacto {
+                    grid-template-columns: 1fr;
+                }
+            }
+        }
+    }
+
+
+}

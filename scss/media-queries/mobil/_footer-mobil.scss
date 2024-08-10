@@ -1,0 +1,64 @@
+@import "../../utilities/variables";
+@media (max-width:600px) {
+
+
+    .col-footer:nth-child(1) {
+        display: none;
+    }
+
+    footer.footer {
+        position: sticky;
+        bottom: 0;
+        padding: 0px !important;
+    }
+
+    .contenedor-footer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+
+        .col-footer-movil {
+            display: flex !important;
+            flex-direction: row;
+
+            .datos-contacto-footer {
+
+                display: flex;
+
+                .contactofooter {
+
+                    a {
+                        .icono-footer {
+                            width: 30px !important;
+                            border-radius: 0px;
+                        }
+                    }
+
+                }
+
+
+
+            }
+        }
+
+        .datos-contacto-footer {
+            flex-direction: row;
+            column-gap: 20px;
+        }
+
+
+
+        .link-logo-footer img {
+            width: 70px;
+            margin: 0px;
+        }
+
+    }
+
+
+
+
+
+}

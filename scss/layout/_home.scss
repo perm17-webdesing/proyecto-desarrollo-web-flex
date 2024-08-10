@@ -1,0 +1,319 @@
+@import "../utilities/variables.scss";
+
+.cont-hero-home {
+    padding: 0px 0px 4rem 0px;
+
+    .hero-home {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        position: relative;
+
+        .col-hero {
+            width: 50%;
+
+            .contenedor-titulo-hero-home {
+
+                .sub-titulo {
+                    font-size: 2rem;
+                }
+
+                h1 {
+                    font-weight: 900;
+                    font-size: 4rem;
+                    line-height: 100%;
+                }
+
+                .p-hero-home {
+                    font-size: 1.5rem;
+                    margin: 0px 0px 20px 0px;
+
+                }
+
+            }
+
+            .contenedor-btn {
+                padding: 20px 0px;
+                display: flex;
+                column-gap: 20px;
+                align-items: center;
+
+            }
+
+            .img-hero {
+                height: 500px;
+            }
+
+            .counterup-div {
+                padding: 20px;
+                background-color: $color-negro;
+                border-radius: 10px;
+                color: #6a6d74;
+                font-size: 12px;
+                display: flex;
+                gap: 20px;
+                flex-direction: row;
+
+
+                span {
+                    color: $color-primario;
+                    font-size: 14px;
+                }
+
+                .counter-up-text {
+                    padding: 14px;
+                    border: 1px solid #34363A;
+                    border-radius: 10px;
+                    display: flex;
+                    flex-direction: column-reverse;
+
+                    .numero-contador {
+                        color: $color-primario;
+                        font-family: $inconsolata;
+                        font-size: 18px;
+                        letter-spacing: 0cap;
+                        margin: 0px;
+                        line-height: 100%;
+
+
+                    }
+                }
+
+
+
+            }
+
+        }
+
+        .col-counter-up {
+            position: absolute;
+            bottom: 50px;
+            left: 0;
+            width: auto;
+        }
+
+
+    }
+}
+
+.sec-sobre-mi {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    align-items: center;
+
+    .col-sobremi {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+}
+
+.sec-experiencia {
+
+    .sec-experiencia-home {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+
+        .logo-experiencia {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            width: 30%;
+
+            img {
+                width: 200px;
+            }
+        }
+
+        .contenedor-exp {
+
+            width: 70%;
+            background-color: $color-negro;
+            border-radius: 10px;
+            padding: 40px;
+
+            .contenedor-card-exp {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: auto auto;
+                gap: 20px;
+                margin-top: 40px;
+
+                .card-exp {
+                    padding: 20px;
+                    border: 1px solid #34363A;
+                    border-radius: 10px;
+                    margin-bottom: 10px;
+                    font-size: 24px;
+                    margin: 0px;
+                    margin: 0px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: start;
+                    align-items: center;
+                    column-gap: 20px;
+
+                    .icon-exp img {
+                        height: 50px;
+                    }
+
+                    .fecha-exp {
+                        color: #5CFBD8;
+                        font-family: "Inconsolata", monospace;
+                        font-weight: 300;
+                    }
+
+                    .empresa-exp {
+                        font-style: italic;
+                        color: #6a6d74;
+                        font-size: 14px;
+                    }
+
+                }
+            }
+        }
+
+    }
+
+}
+
+#servicios {
+
+    .contenedor-servicios {
+
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        margin: auto;
+
+        .text-servicios {
+
+            .sub-titulo,
+            h2 {
+
+                text-align: center;
+            }
+
+        }
+
+        .contenedor-card-servicios {
+
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto auto;
+            gap: 20px;
+
+            .card-servicio {
+                margin: 0px;
+                display: flex;
+                flex-direction: row-reverse;
+                align-items: center;
+                column-gap: 20px;
+                padding: 20px;
+                border: 1px solid #34363A;
+                border-radius: 10px;
+                margin-bottom: 10px;
+
+
+                h3 {
+                    margin-bottom: 0px;
+                }
+
+
+                .p-servicio {
+                    color: #96979b;
+                    margin-top: 5px;
+                }
+
+                .sub-titulo {
+                    text-align: center;
+                }
+
+                .titulo-secciones {
+                    text-align: center;
+                }
+
+                .icon-servicios {
+
+                    img {
+                        height: 75px;
+                        border-radius: 0px;
+                    }
+
+
+                }
+            }
+
+        }
+
+
+    }
+
+}
+
+#contacto {
+    .contenedor-contacto {
+        display: flex;
+        flex-direction: row;
+        column-gap: 60px;
+
+        .col-contacto {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 50%;
+
+            &.form{
+                padding: 20px 0px 0px 0px;
+            }
+
+            h5 {
+                text-align: start;
+            }
+
+            .contenedor-datos-contacto {
+                margin-top: 20px;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: auto auto;
+                gap: 20px;
+
+                .dato-contacto {
+                    
+
+                    img {
+                        height: 25px;
+                        margin-right: 10px;
+                        border-radius: 0px;
+                    }
+
+                    a {
+                        font-family: $inconsolata;
+                        text-decoration: none;
+                        transition: $trasition;
+                        display: flex;
+                        align-items: center;
+                        color: $color-primario;
+                        transition: $trasition;
+
+                        &:hover {
+                            text-decoration: line-through;
+                            color: $color-blanco;
+                        }
+                    }
+
+
+                }
+            }
+
+
+        }
+    }
+}

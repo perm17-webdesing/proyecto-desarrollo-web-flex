@@ -1,0 +1,68 @@
+@import "../../utilities/variables";
+@media (max-width:600px) {
+    header{
+        padding: 0.5rem 2rem !important;
+        .seccion {
+            padding: 20px 20px !important;
+        }
+
+        .contenedor-header{
+            .desktop{
+                display: none;
+            }
+            .cont-toggle{
+                .offcanvas{
+                    .offcanvas-body{
+                        .offcanva-contacto{
+                            display: none;
+    
+                        }
+                        .cont-nav-movil{
+                            display: flex;
+                            margin-bottom: 20px;
+    
+                            .nav-movil {
+                                display: flex;
+                                flex-direction: column;
+                                row-gap: 15px;
+                                padding: 20px 0px;
+
+                                a{
+                                    color:$color-primario;
+                                }
+                            }
+                        }
+
+                    }
+
+
+                }
+
+            }
+
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

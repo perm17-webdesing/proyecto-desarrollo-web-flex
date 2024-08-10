@@ -1,0 +1,167 @@
+@import "../utilities/variables.scss";
+
+header {
+    background-color: #34363ad3 !important;
+    padding: 0rem 2rem !important;
+
+    .contenedor-header {
+        justify-content: space-between;
+        align-items: center;
+
+        margin: auto !important;
+
+        .logo-header {
+            height: 40px;
+        }
+
+        .nav.desktop {
+
+            margin: 0px;
+            padding: 20px 0px;
+
+            a {
+                font-family: $inconsolata;
+                font-style: normal;
+                text-decoration: none;
+                display: inline;
+                padding: 5px 10px;
+                margin: 0px 5px;
+                color: $color-blanco;
+                text-decoration: none;
+
+                &:hover {
+                    color: $color-primario !important;
+                    text-decoration: line-through !important;
+                    transition: $trasition;
+                    transform: translateY(-3px);
+
+                }
+            }
+        }
+
+        .cont-toggle {
+
+
+            .btn-toggle {
+                background-color: $color-negro;
+                padding: 5px 10px;
+                border-radius: $border-radius;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+
+                .icono-menu {
+                    color: $color-blanco;
+                    font-size: 20px;
+                    transition: all 0.3s ease-in-out;
+                    font-size: 30px;
+
+                    &:hover {
+                        color: $color-primario;
+                        transition: $trasition;
+                    }
+                }
+
+            }
+
+            .offcanvas {
+
+
+                .offcanvas-body,
+                .offcanvas-header {
+                    background-color: $color-negro !important;
+                }
+
+                .btn-cerrar-offcanva {
+                    color: #fff !important;
+
+                    &:hover {
+                        color: $color-primario !important;
+                        cursor: pointer;
+                        transition: $trasition;
+                    }
+                }
+
+                .offcanvas-body {
+
+                    .cont-nav-movil {
+                        display: none;
+                    }
+
+                    .offcanva-contacto {
+                        background-color: #34363A;
+                        padding: 1rem;
+                        border-radius: 10px;
+                        margin-bottom: 20px;
+
+                        h5 {
+                            color: $color-blanco;
+
+                        }
+
+                        .btn-enviar {
+                            background-color: #000000;
+                            color: #fff;
+                            border-radius: $border-radius;
+                            padding: 5px 10px;
+                            appearance: auto;
+                            user-select: none;
+                            align-items: flex-start;
+                            text-align: center;
+                            cursor: default;
+                            box-sizing: border-box;
+                            border-width: none;
+                            border-style: none;
+
+
+                            &:hover {
+                                background-color: #000CBE;
+                                transition: $trasition;
+                            }
+                        }
+
+
+                    }
+
+                    .offcanva-datos-contacto {
+                        display: flex;
+                        flex-direction: column;
+                        row-gap: 5px;
+
+                        .dato-contacto {
+                            a {
+                                color: $gris-claro !important;
+                                transition: $trasition;
+
+                                &:hover {
+                                    color: $color-primario !important;
+
+
+                                }
+
+                                i {
+                                    margin-right: 10px;
+                                }
+                            }
+
+
+                        }
+                    }
+
+                }
+
+
+
+            }
+
+
+
+        }
+
+
+
+    }
+
+
+}

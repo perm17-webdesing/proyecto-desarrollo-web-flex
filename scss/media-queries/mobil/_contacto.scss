@@ -1,0 +1,11 @@
+@import "../../utilities/variables";
+
+@media (max-width:600px) {
+.container-iframe{
+    flex-direction: column;
+    .sec-spotify{
+        margin-top: 20px;
+    }
+}
+
+}
