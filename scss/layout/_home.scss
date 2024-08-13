@@ -146,43 +146,31 @@
                 gap: 20px;
                 margin-top: 40px;
 
-                .card-exp {
-                    padding: 20px;
-                    border: 1px solid #34363A;
-                    border-radius: 10px;
-                    margin-bottom: 10px;
-                    font-size: 24px;
-                    margin: 0px;
-                    margin: 0px;
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: start;
-                    align-items: center;
-                    column-gap: 20px;
 
-                    .icon-exp img {
-                        height: 50px;
-                    }
 
-                    .fecha-exp {
-                        color: #5CFBD8;
-                        font-family: "Inconsolata", monospace;
-                        font-weight: 300;
-                    }
-
-                    .empresa-exp {
-                        font-style: italic;
-                        color: #6a6d74;
-                        font-size: 14px;
-                    }
-
+                .icon-exp img {
+                    height: 50px;
                 }
+
+                .fecha-exp {
+                    color: #5CFBD8;
+                    font-family: "Inconsolata", monospace;
+                    font-weight: 300;
+                }
+
+                .empresa-exp {
+                    font-style: italic;
+                    color: #6a6d74;
+                    font-size: 14px;
+                }
+
             }
         }
-
     }
 
 }
+
+
 
 #servicios {
 
@@ -270,7 +258,7 @@
             justify-content: space-between;
             width: 50%;
 
-            &.form{
+            &.form {
                 padding: 20px 0px 0px 0px;
             }
 
@@ -286,7 +274,7 @@
                 gap: 20px;
 
                 .dato-contacto {
-                    
+
 
                     img {
                         height: 25px;

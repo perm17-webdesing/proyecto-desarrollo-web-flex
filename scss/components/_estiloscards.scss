@@ -1,0 +1,35 @@
+@import "../utilities/variables.scss";
+
+@mixin card{
+    padding: 20px;
+    border: 1px solid #34363A;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin: 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    column-gap: 20px;
+    transition: all .3s;
+}
+.card-exp {
+ @include card;
+
+    &:hover {
+        background-image: linear-gradient(163deg, $color-negro 0%, #313131 100%);
+        box-shadow: 0px 0px 20px 1px #ffffff10;
+
+    }
+}
+
+.card-servicio{
+
+    @include card;
+    &:hover{
+        background-image: linear-gradient(163deg, $color-negro 0%, #313131 100%);
+        box-shadow: 0px 0px 20px 1px #ffffff10;
+    }
+
+}
