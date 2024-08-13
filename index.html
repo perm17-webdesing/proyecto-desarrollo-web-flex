@@ -21,6 +21,9 @@
     <!--CSS-->
     <link rel="stylesheet" href="css/style.css">
 
+    <!-- ANIMACIONES AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body class="body">
@@ -120,7 +123,8 @@
     <!--HERO HOME-->
     <main class="seccion">
         <div class="container cont-hero-home">
-            <div class="hero-home">
+            <div class="hero-home" data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom" >
                 <div class="col-hero">
                     <div class="contenedor-titulo-hero-home">
                         <div class="sub-titulo">Hola! Soy Pedro Rivero!</div>
@@ -137,7 +141,7 @@
                 </div>
                 <div class="col-hero">
                     <figure>
-                        <img class="img-hero" src="images/img-hero-home.svg" alt="Pedro Rivero Diseño web">
+                        <img class="img-hero scale-up" src="images/img-hero-home.svg" alt="Pedro Rivero Diseño web">
                     </figure>
                 </div>
                 <div class="col-hero col-counter-up">
@@ -167,9 +171,10 @@
 
     <!-- SECCION SOBRE MI HOME -->
     <section class="seccion">
-        <div class="container dark">
+        <div class="container dark" >
             <div class="sec-sobre-mi">
-                <div class="col-sobremi">
+                <div class="col-sobremi" data-aos="fade-up"
+                data-aos-anchor-placement="bottom-bottom">
                     <p class="sub-titulo">Siempre en busqueda de nuevos desafíos</p>
                     <h2 class="titulo-secciones">Diseñador web especializado ecommerce con WordPress y Webflow</h2>
                     <p class="parrafo">Mi especialización se enfoca en el diseño de sitios web en WordPress, los cuales
@@ -181,7 +186,7 @@
                 <div class="col-sobremi">
                     <div class="img-sobre-mi">
                         <figure>
-                            <img src="images/Recurso 7.svg" alt=" Foto Pedro Rivero" class="foto-sec-sobre-mi">
+                            <img src="images/Recurso 7.svg" alt=" Foto Pedro Rivero" class="foto-sec-sobre-mi ">
                         </figure>
                     </div>
 
@@ -200,7 +205,8 @@
                 <div class="logo-experiencia 30">
                     <img src="images/favicon pedro rivero.png" alt="Logo Pedro Rivero">
                 </div>
-                <div class="contenedor-exp">
+                <div class="contenedor-exp" data-aos="fade-up"
+                data-aos-anchor-placement="bottom-bottom">
                     <div class="text-exp">
                         <p class="sub-titulo">Soy freelance con mas de 4 años de experiencia.</p>
                         <h2 class="titulo-secciones">
@@ -275,7 +281,8 @@
                         Mis servicios para el desarrollo de tu negocio.
                     </h2>
                 </div>
-                <div class="contenedor-card-servicios">
+                <div class="contenedor-card-servicios" data-aos="fade-up"
+                data-aos-anchor-placement="bottom-bottom">
                     <div class="card-servicio">
                         <div class="text-servicios">
                             <h3 class="servicios-card">Diseño Web</h3>
@@ -343,7 +350,7 @@
     <div class="seccion" id="contacto">
         <div class="container">
             <div class="contenedor-contacto">
-                <div class="col-contacto">
+                <div class="col-contacto" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
                     <h4 class="sub-titulo"> Hablemos de tu negocio</h4>
                     <h5 class="titulo-secciones">
                         Contáctanos
@@ -462,6 +469,11 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 
+    <!-- ANIMACIONES AOS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>

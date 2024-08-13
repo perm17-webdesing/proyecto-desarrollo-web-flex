@@ -101,23 +101,28 @@ header {
                         }
 
                         .btn-enviar {
-                            background-color: #000000;
                             color: #fff;
-                            border-radius: $border-radius;
-                            padding: 5px 10px;
-                            appearance: auto;
-                            user-select: none;
-                            align-items: flex-start;
-                            text-align: center;
-                            cursor: default;
-                            box-sizing: border-box;
-                            border-width: none;
-                            border-style: none;
-
-
+                            cursor: pointer;
+                            border: 1px solid $color-negro;
+                            border-radius: 4px;
+                            padding: 0.8em 2em;
+                            background: $color-negro;
+                            transition: 0.2s;
+                
                             &:hover {
-                                background-color: #000CBE;
-                                transition: $trasition;
+                                color: $color-negro;
+                                transform: translate(-0.25rem, -0.25rem);
+                                background: $color-primario;
+                                box-shadow: 0.25rem 0.25rem $color-negro;
+                
+                
+                            }
+                
+                            &:active {
+                
+                                transform: translate(0);
+                                box-shadow: none;
+                
                             }
                         }
 

@@ -1,5 +1,24 @@
 @import "../utilities/variables.scss";
 
+@mixin sub-titulos {
+    font-family: $inconsolata;
+    font-size: 1rem;
+}
+
+@mixin titulos {
+    font-family: $dmsans;
+    font-weight: 800;
+    margin: 0px;
+    color: $color-blanco;
+
+}
+
+@mixin flex-center-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -18,14 +37,15 @@ html {
 
             &.dark {
                 background-color: #181818;
-                
+
             }
-            .titulos-paginas{
+
+            .titulos-paginas {
                 font-size: 4rem;
             }
         }
 
-        .container{
+        .container {
             margin: auto;
 
             .dark {
@@ -38,8 +58,8 @@ html {
             font-family: $inconsolata;
             font-weight: 400;
             line-height: 140%;
-            margin:10px 0px;
-            
+            margin: 10px 0px;
+
         }
 
         h1,
@@ -49,10 +69,7 @@ html {
         h5,
         h6,
         div {
-            font-family: $dmsans;
-            font-weight: 800;
-            margin: 0px;
-            color: $color-blanco;
+            @include titulos;
 
         }
 
@@ -68,9 +85,7 @@ html {
 
 
         figure {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flex-center-center;
             margin: 0;
             padding: 0;
         }
@@ -85,28 +100,41 @@ html {
 
 
         .sub-titulo {
-            font-family: $inconsolata;
+            @include sub-titulos;
             color: $color-primario;
-            font-size: 1rem;
+
             font-weight: 800;
             text-transform: uppercase;
         }
+
         .btn {
-            background-color: $color-primario;
-            color: #181818;
-            padding: 10px 20px;
-            border-radius: 5px;
-            text-decoration: none;
-            transition: $trasition;
-        }
-        
-        .btn:hover {
-            background-color: $color-secundario;
             color: #fff;
-            transform: translateY(-3px);
-        
+            cursor: pointer;
+            border: 1px solid $color-negro;
+            border-radius: 4px;
+            padding: 0.8em 2em;
+            background: $color-negro;
+            transition: 0.2s;
+
+            &:hover {
+                color: $color-negro;
+                transform: translate(-0.25rem, -0.25rem);
+                background: $color-primario;
+                box-shadow: 0.25rem 0.25rem $color-negro;
+
+
+            }
+
+            &:active {
+
+                transform: translate(0);
+                box-shadow: none;
+
+            }
         }
-        
+
+
+
         .link {
             margin-right: 20px;
             border-radius: 5px;
@@ -114,14 +142,14 @@ html {
             color: $color-primario;
             transition: $trasition;
         }
-        
+
         .link:hover {
             text-decoration: line-through;
             color: $color-blanco;
             transform: translateY(-3px);
         }
 
-        .div-form{
+        .div-form {
             .formulario-home {
                 color: #EDEDED;
 
@@ -147,7 +175,7 @@ html {
                             border-bottom: 1px solid #5CFBD8;
                         }
 
-                        
+
                     }
 
                     textarea {
