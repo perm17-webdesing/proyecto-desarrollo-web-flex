@@ -1,0 +1,27 @@
+@import "../../utilities/variables";
+
+@media (min-width: 601px) and (max-width: 1279px) {
+    .container {
+        padding: 0px !important;
+    }
+
+    .seccion {
+        padding: 40px 20px !important;
+    }
+
+    h2 {
+        font-size: 32px !important;
+    }
+
+    .titulos-paginas {
+        font-size: 42px;
+    }
+
+    .contenedor-titulos-paginas img {
+        width: 100%;
+    }
+
+    .hero-sobre-mi .imagen-hero{
+        width: 100%;
+    }
+}

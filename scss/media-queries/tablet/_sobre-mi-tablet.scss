@@ -1,0 +1,36 @@
+@import "../../utilities/variables";
+
+@media (min-width: 601px) and (max-width: 1279px) {
+
+    .contenedor-sobre-mi{
+
+        .cont-text-soypedro{
+            padding-right: 50px !important;
+        }
+
+        .flotante2 {
+            bottom: 150px;
+            left: 0px;
+        }
+         .flotante1 {
+            bottom: 250px;
+         }
+
+    } 
+
+    .contenedor-proceso-de-trabajo {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: normal;
+        align-content: normal;
+
+        .col-texto{
+            padding-right: 0px;
+            padding-bottom: 40px;
+        }
+    }
+
+
+}

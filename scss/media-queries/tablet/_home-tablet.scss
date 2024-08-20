@@ -1,0 +1,61 @@
+@import "../../utilities/variables";
+
+@media (min-width: 601px) and (max-width: 1279px) {
+
+    .cont-hero-home {
+        
+
+        .hero-home {
+
+            .col-hero {
+
+                .img-hero {
+                    height: 300px;
+                }
+
+                .contenedor-btn {
+                    padding-top: 120px !important;
+
+                }
+
+
+            }
+            .col-counter-up{
+                bottom: 90px!important;
+            }
+
+        }
+
+
+
+
+    }
+
+
+   .sec-experiencia-home{
+
+    .logo-experiencia{
+        display: none !important;
+       }
+
+       .contenedor-exp{
+        width: 100% !important;
+
+       }
+    
+   }
+   #contacto{
+    .contenedor-contacto{
+        display: flex;
+        flex-direction: column !important;
+        column-gap: 60px;
+        .col-contacto{
+            width: 100% !important;
+        }
+    }
+
+   } 
+
+
+
+}
