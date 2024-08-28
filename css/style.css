@@ -217,6 +217,7 @@ header .contenedor-header .cont-toggle .btn-toggle {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-style: hidden;
 }
 header .contenedor-header .cont-toggle .btn-toggle .icono-menu {
   color: #EDEDED;
