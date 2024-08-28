@@ -76,8 +76,8 @@ header {
 
                 .btn-cerrar-offcanva {
                     color: #fff !important;
-                    background-color: #34363A;
-                    border-style: hidden;
+                    background-color: #34363A !important;
+                    border-style: hidden !important;
 
                     &:hover {
                         color: $color-primario !important;
