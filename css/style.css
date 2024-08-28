@@ -235,6 +235,8 @@ header .contenedor-header .cont-toggle .offcanvas .offcanvas-header {
 }
 header .contenedor-header .cont-toggle .offcanvas .btn-cerrar-offcanva {
   color: #fff !important;
+  background-color: #34363A;
+  border-style: hidden;
 }
 header .contenedor-header .cont-toggle .offcanvas .btn-cerrar-offcanva:hover {
   color: #5cfbd8 !important;
